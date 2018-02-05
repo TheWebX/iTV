@@ -7,5 +7,11 @@ import com.itv.test.beans.Quote;
 
 public interface CheckOutService  {
 
+	/**
+	 * Get quote of the Cart before to CheckOut
+	 * 
+	 * @param products
+	 * @return
+	 */
 	public Quote getQuote(List<Product> products);
 }
