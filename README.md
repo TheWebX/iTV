@@ -8,7 +8,7 @@ This is the web frontend for select the products, calculate the discount and for
 
 #### #### How to configure
 * Edit the file application file into the context for select the spring profile "mongodb" or "mock"
-* Switch the comment inside the application boot class for exclude the mongo autoconfig for don't start the db client (mock profile)
+* Switch the comment inside the application boot class for include the mongo autoconfig (mongodb spring profile)
 
 #### #### How to run the app
 * Use the command "mvn spring-boot:run" inside the project folder

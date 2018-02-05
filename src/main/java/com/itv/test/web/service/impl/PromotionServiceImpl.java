@@ -21,6 +21,9 @@ public class PromotionServiceImpl implements PromotionService {
 	@Autowired
 	private ProductRepository productRepository;
 
+	@Autowired
+	private Mapper<Promotion, com.itv.test.web.repository.dto.Promotion> mapper;
+
 	public ProductRepository getProductRepository() {
 		return productRepository;
 	}
@@ -28,9 +31,6 @@ public class PromotionServiceImpl implements PromotionService {
 	public void setProductRepository(ProductRepository productRepository) {
 		this.productRepository = productRepository;
 	}
-
-	@Autowired
-	private Mapper<Promotion, com.itv.test.web.repository.dto.Promotion> mapper;
 
 	public PromotionRepository getPromotionRepository() {
 		return promotionRepository;
