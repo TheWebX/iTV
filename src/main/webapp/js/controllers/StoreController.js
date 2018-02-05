@@ -6,7 +6,6 @@ function StoreController($scope, $routeParams, $http, DataService) {
 	$scope.cart = DataService.cart;
 	$scope.cart.$scope = $scope;
 	$scope.cart.$http = $http;
-	$scope.currency = "GBP";
 	
 	$http({
 		url : '/products/findAll',

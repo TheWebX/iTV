@@ -46,7 +46,7 @@
                             ng-click="cart.addItem(item.sku, item.name, item.price, -1)">-</button>
                       </div>
                     </td>
-                    <td class="tdRight">{{item.price * item.quantity | currency : currency}}</td>
+                    <td class="tdRight">{{item.price * item.quantity | currency : '&#163;'}}</td>
                     <td class="tdCenter" title="remove from cart">
                         <a href="" ng-click="cart.addItem(item.sku, item.name, item.price, -10000000)" >
                             <i class="icon-remove" />
@@ -63,19 +63,19 @@
                 </tr>
                 <tr class="well">
                     <td><b>Total Gross</b></td>
-                    <td class="tdCenter"><b>{{cartTotal.totalPreDiscountAmount | currency : currency}}</b></td>
+                    <td class="tdCenter"><b>{{cartTotal.totalPreDiscountAmount | currency : '&#163;'}}</b></td>
                     <td />
                     <td />
                 </tr>
                 <tr class="well">
                     <td><b>Total Discount</b></td>
-                    <td class="tdCenter"><b>{{cartTotal.totalDiscountAmount | currency : currency}}</b></td>
+                    <td class="tdCenter"><b>{{cartTotal.totalDiscountAmount | currency : '&#163;'}}</b></td>
                     <td />
                     <td />
                 </tr>
                 <tr class="well">
                     <td><b>Total to Pay</b></td>
-                    <td class="tdCenter"><b>{{cartTotal.totalPrice | currency : currency}}</b></td>
+                    <td class="tdCenter"><b>{{cartTotal.totalPrice | currency : '&#163;'}}</b></td>
                     <td />
                     <td />
                 </tr>

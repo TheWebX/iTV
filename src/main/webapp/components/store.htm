@@ -1,7 +1,7 @@
 <p class="text-info">
     <br /><br />
     Live Promotions of the day:<br />
-    <p ng-repeat="promo in store.promotions" class="offer">Offer for {{promo.productDescription}}: Take {{promo.quantity}} pay {{promo.price}}</p>
+    <p ng-repeat="promo in store.promotions" class="offer">Offer for {{promo.productDescription}}: Take {{promo.quantity}} pay {{promo.price | currency : '&#163;'}}</p>
     <br />
 </p>
 
@@ -14,7 +14,7 @@
         <td class="tdRight" colspan="4" >
             <a href="#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                 <i class="icon-shopping-cart" />
-                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency : currency}}</b>
+                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency : '&#163;'}}</b>
             </a>
         </td>
     </tr>
@@ -27,7 +27,7 @@
             <b></b>{{product.description}}
         </td>
         <td class="tdRight">
-            {{product.price | currency : currency}}
+            {{product.price | currency : '&#163;'}}
         </td>
         <td class="tdCenter">
             <a href="" ng-click="cart.addItem(product.productId, product.description, product.price, 1)">
@@ -39,7 +39,7 @@
         <td class="tdRight" colspan="4">
             <a href="#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
                 <i class="icon-shopping-cart" />
-                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency : currency}}</b>
+                <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency : '&#163;'}}</b>
             </a>
         </td>
     </tr>
