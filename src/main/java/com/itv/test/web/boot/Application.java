@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfigurat
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 
 // Switch this comment annotation if you want to use mongodb (instead of the mock)
+// @SpringBootApplication
 @SpringBootApplication(exclude= {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 public class Application {
 

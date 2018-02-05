@@ -2,8 +2,8 @@
 
 This is the web frontend for select the products, calculate the discount and for checkout with PayPal.
 
-* The Store page will display the products and the last promotions available
-* Inside the Cart will be displayed the price before the promotions, the total discount and final price
+* The Store page will show the products and the last promotions available
+* Inside the Cart will show the price before the promotions, the total discount and final price
 * Inside the PayPal official transaction page will be displayed the products, discount and total to pay
 
 #### #### How to configure
