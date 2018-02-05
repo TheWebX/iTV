@@ -15,15 +15,15 @@ public class PromotionRepositoryImpl implements PromotionRepository {
 
 	@Override
 	public List<Promotion> findAll() {
-		return Arrays.asList(new Promotion("A", 3, 130.0), new Promotion("B", 2, 45.0));
+		return Arrays.asList(new Promotion("A", 3, 1.30), new Promotion("B", 2, 0.45));
 	}
 
 	@Override
 	public Promotion findByProductId(String productId) {
 		if("A".equals(productId)) {
-			return new Promotion("A", 3, 130.0);
+			return new Promotion("A", 3, 1.30);
 		}else if("B".equals(productId)) {
-			return new Promotion("B", 2, 45.0);
+			return new Promotion("B", 2, 0.45);
 		}else {
 			return null;
 		}
